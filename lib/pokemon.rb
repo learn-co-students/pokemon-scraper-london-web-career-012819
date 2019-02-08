@@ -7,7 +7,7 @@ require 'pry'
 class Pokemon
   attr_reader :name, :type, :id, :db, :hp
 
-  def initialize(id: nil, name:, hp:60, type:, db:)
+  def initialize(id: nil, name:, type:, hp:60,  db:)
     @name = name
     @type = type
     @db = db
