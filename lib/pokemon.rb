@@ -35,4 +35,9 @@ class Pokemon
     parse_pokemon(pokemon_hash, db)
   end
 
+  def alter_hp(hp, db)
+   @hp = hp
+   db.execute("UPDATE pokemon SET hp =? WHERE id =?", @hp, @id)
+ end
+
 end
